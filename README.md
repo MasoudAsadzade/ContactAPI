@@ -1,5 +1,5 @@
 ﻿ # ContactAPI on CleanArchitecture
-ContactAPI on Clean Architecture for ASP.NET Core 5.0. Built with Onion/Hexagonal Architecture.
+ContactAPI on Clean Architecture and CQRS patern for ASP.NET Core 5.0. Built with Onion/Hexagonal Architecture.
 ## Technologies
 * ASP.NET Core 5.0 WebAPI (JWT and Swagger)
 * Entity Framework Core 5.0
