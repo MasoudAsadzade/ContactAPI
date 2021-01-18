@@ -41,7 +41,7 @@ cd to {ContactAPI}.Infrastructure
 
  dotnet ef database update --startup-project ../ContactAPI.Api/ContactAPI.Api.csproj -c "ApplicationDbContext"
 ```
-# Test Instruction
+## Test Instruction
 
 1. Add two skills by AddSkill
 2. Add user by Identity -> register 
