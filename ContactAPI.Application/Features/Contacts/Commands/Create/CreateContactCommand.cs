@@ -57,7 +57,7 @@ namespace ContactAPI.Application.Features.Contacts.Commands.Create
             var registerRequest = _mapper.Map<Contact>(request);
             await _contactRepository.InsertAsync(registerRequest);
             await _unitOfWork.Commit(cancellationToken);
-            return Result<string>.Success(@"Add Skill to your Contact Info by your UserId="+ registerRequest.UserIdentityId);
+            return Result<string>.Success($"Edit Contact Info by your ContactId= {registerRequest.Id}", message: $"Contact Is Added");
         }
     }
 }
