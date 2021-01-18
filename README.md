@@ -41,7 +41,26 @@ cd to {ContactAPI}.Infrastructure
 
  dotnet ef database update --startup-project ../ContactAPI.Api/ContactAPI.Api.csproj -c "ApplicationDbContext"
 ```
+# Test Instruction
 
+1. Add two skills by AddSkill
+2. Add user by Identity -> register 
+3. Use your email address and password to Generates a JSON Web Token by Identity -> token.
+
+4. Copy the following JWT token to use for authentication. and id as UserId to add Contact.
+(Contact table is exposing some subject-to-change attribute of users. like FirstName, Address,..)
+
+![alt text](ContactAPI.Api\Figs\Token.png)
+
+5. Insert JWT token ->  Bearer {Token}
+
+![alt text](ContactAPI.Api\Figs\JWT.png)
+
+6. Add Contact by UserId
+
+7. You can Edit your Contact By ContactId returned "Add Contact"
+
+8. Add Skill for your Contact using UserId and SkillId by ContactSkill -> Add User's Skills
 ### Customized Database Migrations
 
 Please run following commands to build and run your migrations
