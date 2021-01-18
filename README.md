@@ -16,7 +16,6 @@ git clone https://github.com/MasoudAsadzade/ContactAPI
 ``` 
 Cd to {YourPath}\ContactAPI\ContactAPI.Web
 dotnet restore
-dotnet ef database update
 dotnet build
 dotnet run
 ``` 
