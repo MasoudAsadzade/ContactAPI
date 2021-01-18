@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ContactAPI.Api</name>
+    </assembly>
+    <members>
+        <member name="M:ContactAPI.Api.Controllers.IdentityController.GetTokenAsync(ContactAPI.Application.DTOs.Identity.TokenRequest)">
+            <summary>
+            Generates a JSON Web Token for a valid combination of emailId and password.
+            </summary>
+            <param name="tokenRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ContactAPI.Api.Controllers.v1.ContactController.GetAll(System.Int32,System.Int32)">
+            <summary>
+            Get All Conatcts
+            </summary>
+            <param name="pageNumber"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ContactAPI.Api.Controllers.v1.ContactController.GetById(System.String)">
+            <summary>
+            Get Contact By UserId
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ContactAPI.Api.Controllers.v1.ContactController.Post(ContactAPI.Application.Features.Contacts.Commands.Create.CreateContactCommand)">
+            <summary>
+            Add Contact
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ContactAPI.Api.Controllers.v1.ContactController.Put(System.Int32,ContactAPI.Application.Features.Contacts.Commands.Update.UpdateContactCommand)">
+            <summary>
+            Edit Contact(User-Limited Authorization Warning!)
+            </summary>
+            <param name="contactId"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ContactAPI.Api.Controllers.v1.ContactController.Delete(System.Int32)">
+            <summary>
+            Delete Contact(User-Limited Authorization Warning!)
+            </summary>
+            <param name="contactId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ContactAPI.Api.Controllers.v1.ContactSkillController.GetAll(System.Int32,System.Int32)">
+            <summary>
+            Get all User's Skills
+            </summary>
+            <param name="pageNumber"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ContactAPI.Api.Controllers.v1.ContactSkillController.GetByUserId(System.String)">
+            <summary>
+            Get User's Skills
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ContactAPI.Api.Controllers.v1.ContactSkillController.Post(ContactAPI.Application.Features.ContactSkills.Commands.Create.CreateContactSkillCommand)">
+            <summary>
+            Add User's Skills
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ContactAPI.Api.Controllers.v1.ContactSkillController.Put(System.String,ContactAPI.Application.Features.ContactSkills.Commands.Update.UpdateContactSkillCommand)">
+            <summary>
+            Edit User's Skills (User-Limited Authorization Warning!)
+            </summary>
+            <param name="userId"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ContactAPI.Api.Controllers.v1.ContactSkillController.Delete(System.String,System.Int32)">
+            <summary>
+            Delete User's Skills (User-Limited Authorization Warning!)
+            </summary>
+            <param name="userId"></param>
+            <param name="skillId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ContactAPI.Api.Controllers.v1.SkillController.GetAll(System.Int32,System.Int32)">
+            <summary>
+            Get All Skills
+            </summary>
+            <param name="pageNumber"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ContactAPI.Api.Controllers.v1.SkillController.GetById(System.Int32)">
+            <summary>
+            Get Skill By Id
+            </summary>
+            <param name="skillId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ContactAPI.Api.Controllers.v1.SkillController.Post(ContactAPI.Application.Features.Skills.Commands.Create.CreateSkillCommand)">
+            <summary>
+            Add Skill
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ContactAPI.Api.Controllers.v1.SkillController.Put(System.Int32,ContactAPI.Application.Features.Skills.Commands.Update.UpdateSkillCommand)">
+            <summary>
+            Edit Skill
+            </summary>
+            <param name="skillId"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ContactAPI.Api.Controllers.v1.SkillController.Delete(System.Int32)">
+            <summary>
+            Delete Skill
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
