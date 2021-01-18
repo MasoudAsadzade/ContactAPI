@@ -31,12 +31,18 @@ If you would like to use SQL Server, you will need to update **WebApi/appsetting
 ```json
   "UseInMemoryDatabase": false,
 ```
+Verify that the **ApplicationConnection** connection string along with **IdentityConnection** within **appsettings.json** points to a valid SQL Server instance.
 
-Verify that the **ApplicationConnection** connection string along with **IdentityConnection** within **appsettings.json** points to a valid SQL Server instance. 
+Please run following commands to update your database from existing migrations and then run the project:
+```
+cd to {ContactAPI}.Infrastructure
+ 
+ dotnet ef database update --startup-project ../ContactAPI.Api/ContactAPI.Api.csproj -c "IdentityContext"
 
-When you run the application the database will be automatically created (if necessary) and the latest migrations will be applied.
+ dotnet ef database update --startup-project ../ContactAPI.Api/ContactAPI.Api.csproj -c "ApplicationDbContext"
+```
 
-### Database Migrations
+### Customized Database Migrations
 
 Please run following commands to build and run your migrations
 ```
