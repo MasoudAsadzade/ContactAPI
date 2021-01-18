@@ -12,7 +12,7 @@ ContactAPI on Clean Architecture for ASP.NET Core 5.0. Built with Onion/Hexagona
 ``` 
 git clone https://github.com/MasoudAsadzade/ContactAPI
 ``` 
-* Run the following commands to install the required packages, run database migrations, and start the application on your local as your will.
+* Run the following commands to install the required packages, run, and start the application on your local as your will.
 ``` 
 Cd to {YourPath}\ContactAPI\ContactAPI.Web
 dotnet restore
