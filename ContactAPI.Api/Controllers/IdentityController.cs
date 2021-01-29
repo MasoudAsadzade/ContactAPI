@@ -31,7 +31,7 @@ namespace ContactAPI.Api.Controllers
             return Ok(token);
         }
 
-        [HttpPost("register")]
+        [HttpPost("register new user")]
         [AllowAnonymous]
         public async Task<IActionResult> RegisterAsync(RegisterRequest request)
         {
